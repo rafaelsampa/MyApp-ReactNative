@@ -1,20 +1,27 @@
+
+
+
 import { ScrollView, View, Text, StyleSheet, Linking, TouchableOpacity, Image } from 'react-native';
 
 export default function SobreScreen() {
+  
   return (
     <ScrollView style={styles.container}>
+
       <Text style={styles.title}>Sobre Mim</Text>
       <Text style={styles.text}>
         Sou estudante de Ciência da Computação. Me interesso profundamente por áreas como astroinformática e sistemas embarcados, onde posso unir lógica, hardware e inovação para resolver problemas do mundo real (ou até fora dele!).{'\n\n'}
         Já participei de projetos diversos, desde desafios da NASA até sistemas inteligentes com Arduino, sempre buscando aplicar meu conhecimento de forma criativa e funcional. Levo comigo o desejo constante de aprender e me desafiar.{'\n\n'}
         Além da tecnologia, tive a chance de fazer um intercâmbio na França — uma experiência incrível que me fez aprender francês, fazer amizades e expandir meus horizontes. No tempo livre, sou fã de RPG, um hobby que alimenta minha criatividade e meu gosto por narrativas e estratégia. Gosto de equilibrar teoria e prática, estudo e diversão, e acredito que são essas vivências que definem meu jeito de pensar e construir projetos.
       </Text>
+
       <View style={styles.imageContainer}>
         <Image
           source={require('../../assets/images/sem-contexto.jpeg')}
           style={styles.profileImage}
         />
       </View>
+
       <View style={styles.socialContainer}>
         <TouchableOpacity
           style={styles.socialButton}
@@ -34,7 +41,9 @@ export default function SobreScreen() {
         >
           <Text style={styles.link}>Instagram</Text>
         </TouchableOpacity>
+
       </View>
+
     </ScrollView>
   );
 }
@@ -66,4 +75,5 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
   },
+  
 });
