@@ -76,7 +76,6 @@ export default function JogoScreen() {
         renderItem={({ item }) => <Text style={styles.history}>{item}</Text>}
         keyExtractor={(_, idx) => idx.toString()}
         style={styles.historyList}
-        inverted
       />
     </View>
   );
